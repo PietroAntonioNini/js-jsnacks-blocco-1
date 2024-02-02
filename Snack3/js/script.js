@@ -7,8 +7,14 @@ const oddNumbers = [];
 for(let i = 0; i < 6; i++ ) {
     let number = Number(prompt("Inserisci un numero casuale"));
 
-    if(i % 2 !== 0) {
-        oddNumbers.push(i);
+    if(!isNaN(number)) {
+        if(i % 2 !== 0) {
+            oddNumbers.push(number);
+        }
+    } else {
+        alert("Inserisci un numero!");
+         //ricarico la pagina
+        location.reload(true);
     }
 }
 
