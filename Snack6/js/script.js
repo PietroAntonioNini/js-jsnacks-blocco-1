@@ -11,5 +11,6 @@ for(let i = 1; i <= 10; i++) {
     average += i / 10;
 }
 
-console.log(sum);
-console.log(average);
+//stampo i risultati
+document.querySelector("#sum").innerText = sum;
+document.querySelector("#average").innerText = average;
