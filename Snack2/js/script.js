@@ -6,13 +6,17 @@ let number;
 let sum = 0;
 
 //Ciclo per chiedere 10 volte un numero all'utente, 
-//Se non inserisce un numero viene contato come fosse 0
 for(let i = 0; i < 10; i++) {
     number = Number(prompt("inserisci un numero"));
-    sum += parseInt(number);
 
-    console.log(number);
-    console.log(sum);
+    if(!isNaN(number)) {
+        sum += parseInt(number);
+
+    } else {
+        alert("Inserisci un valore numerico, devi ricominciare da capo:(")
+        //ricarico la pagina
+        location.reload(true);       
+    }
 }
 
 //stampo la somma dei 10 numeri
