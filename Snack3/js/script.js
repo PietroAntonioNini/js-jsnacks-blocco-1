@@ -2,7 +2,6 @@
 
 //creo un array vuota
 const oddNumbers = [];
-console.log(oddNumbers);
 
 //chiedo all'utente 6 numeri
 for(let i = 0; i < 6; i++ ) {
@@ -13,6 +12,5 @@ for(let i = 0; i < 6; i++ ) {
     }
 }
 
-console.log(oddNumbers);
-
+//stampo i numeri dispari 
 document.querySelector("#list").innerText = oddNumbers;
