@@ -3,3 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: #000000;
+}
+
+.my_container h1 {
+    color: #0B60B0;
+}
+
