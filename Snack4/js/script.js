@@ -10,12 +10,13 @@ while(true) {
     }
 }
 
-console.log(number);
-
+//creo una variabile della somma dei numeri
 let sum = 0
 
+//sommo tra loro i numeri che compongono il numero di 4 cifre
 for(let i = 0; i < number.length; i++) {
     sum += parseInt(number[i]);
 }
 
-console.log(sum);
+//stampo la somma
+document.querySelector("#sum").innerText = sum;
